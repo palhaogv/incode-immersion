@@ -18,14 +18,6 @@ function subDigits(num) {
     
 }
 
-/*function x(num) {
-    digits = num.toString().split('');
-    realDigits = digits.map(Number)
-    console.log(realDigits);
-}
-
-
-x(1050)*/
 subDigits(12)
 subDigits(4000000)
 subDigits(0)
