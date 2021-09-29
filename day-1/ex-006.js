@@ -8,11 +8,11 @@ function pyramid(base) {
         if (ifEven != 0) {
             console.log(' '.repeat(spaces) + '#'.repeat(hash) + ' '.repeat(spaces))
             hash +=2
-            spaces -=1
+            spaces--
         } else {
             console.log(' '.repeat(spaces) + '#'.repeat(hash + 1) + ' '.repeat(spaces))
             hash +=2
-            spaces -=1
+            spaces--
         }
     }
 }
