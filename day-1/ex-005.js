@@ -7,12 +7,9 @@ If the string is shorter than 3 characters, it will be padded with spaces. (Look
 function abbrev(str) {
     if (str.length >= 3) {
         console.log(str.substring(0, 3) + ' ' + str.length);
-    } 
-    if (str.length == 2) {
-        console.log(str.substring(0, 2) + ' ' + str.length);
-    } 
-    if (str.length == 1) {
-        console.log(str.substring(0, 1) + '  ' + str.length);
+    } else {
+        const spaces = 3 -  str.length
+        console.log(str.substring(0, str.length) + ' '.repeat(spaces) + ' ' + str.length);
     }
 }
 
@@ -20,3 +17,4 @@ abbrev("Nice")
 abbrev("I am your father")
 abbrev("Supercalifragilisticexpialidocious")
 abbrev("!")
+abbrev("hi")
