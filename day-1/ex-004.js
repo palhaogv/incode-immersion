@@ -1,15 +1,13 @@
 /*Write a function `printVowels` that takes a string as argument and displays only the vowels of the string.*/
 
 function printVowels(str) {
-    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
-    letters = str.split('');
+    vowels = ['a', 'e', 'i', 'o', 'u'];
+    letters = str.toLowerCase().split('');
     vowelsFound = [];
 
-    for (i in letters) {
-        if (vowels.includes(letters[i])) {
-            vowelsFound.push(letters[i])
+    for (i of letters) {
+        vowels.includes(i) ? vowelsFound.push(i) : 0
         }
-    }
     return console.log(vowelsFound.join(''));
 }
 

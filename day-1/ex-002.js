@@ -12,14 +12,16 @@ Your function will print `First player wins` if the first player wins, `Second p
 function rockPaperScissors(f_player, s_player) {
     if (f_player == s_player) {
         console.log('Draw');
-    } if (((f_player == 'rock') && (s_player == 'scissors')) || ((f_player == 'scissors') && (s_player == 'paper')) || ((f_player == 'paper') && (s_player == 'rock'))){
+    } if (((f_player == 'rock') && (s_player == 'scissors')) || ((f_player == 'scissors') && 
+    (s_player == 'paper')) || ((f_player == 'paper') && (s_player == 'rock'))){
         console.log('First player wins');
-    } if (((s_player == 'rock') && (f_player == 'scissors')) || ((s_player == 'scissors') && (f_player == 'paper')) || ((s_player == 'paper') && (f_player == 'rock'))){
+    } if (((s_player == 'rock') && (f_player == 'scissors')) || ((s_player == 'scissors') && 
+    (f_player == 'paper')) || ((s_player == 'paper') && (f_player == 'rock'))){
         console.log('Second player wins');
     }
 }
 
-rockPaperScissors('rock', 'rock')
+rockPaperScissors("rock", "rock")
 rockPaperScissors("rock", "paper")
 rockPaperScissors("rock", "scissors")
 rockPaperScissors("paper", "scissors")
