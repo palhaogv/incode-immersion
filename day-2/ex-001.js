@@ -3,8 +3,9 @@
 If the name has middle names or several surnames, only the last part will be repeated.*/
 
 function displayFullName(name) {
-    nameArray = name.split(' ')
-    console.log(`My name is ${nameArray[nameArray.length -1]}, ${nameArray.join(' ')}!`)
+    let nameSplit = name.split(' ')
+    const lastName = nameSplit[nameSplit.length -1]
+    console.log(`My name is ${lastName}, ${name}`)
 }
 
 displayFullName("James Bond")

@@ -2,9 +2,7 @@
 
 The words will be separated by a space, and the string will end with a `.`.*/
 
-function concatArray(arr) {
-    return console.log(arr.join(' ') + '.')
-}
+const concatArray = arr => console.log(arr.join(' ') + '.')
 
 concatArray(["Hello", "this", "is", "dog"])
 concatArray(["All", "I", "want", "for", "christmas", "is", "you"])

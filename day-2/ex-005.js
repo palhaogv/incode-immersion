@@ -1,4 +1,5 @@
-/*Write a function `evenIndexes` that takes a word as argument, and returns an array of the letters situated at even indexes.*/
+/*Write a function `evenIndexes` that takes a word as argument, and returns an array 
+of the letters situated at even indexes.*/
 
 function evenIndexes(str) {
     arr = []
