@@ -22,7 +22,6 @@ function rmCensored(obj) {
             delete obj[keyToDelete]
         }
     })
-
     return obj
 }
 var swearWords = {"s*it": "m*rde", "sweet jesus": "doux jesus", "f***": "", "omg": "w*sh"}

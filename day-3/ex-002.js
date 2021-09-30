@@ -15,7 +15,7 @@ function sortWords(arr) {
     arr.forEach(str => {
         (str.length % 2 === 0 ) ? obj.even.push(str) : obj.odd.push(str)
     })
-
+    console.log(obj)
     //printing the object
     const prt = JSON.stringify(obj)
     console.log(prt)
