@@ -7,7 +7,8 @@ The key `even` will be associated to an array of the even-length strings.*/
 function sortWords(arr) {
     //creating the object
     let obj = {
-        odd: [], even: []
+        odd: [], 
+        even: []
     }
 
     //getting each item inside the array and checking if its length is odd or even. 

@@ -4,9 +4,9 @@ and returns whether that value is found in the object.
 The value must be found as a value, not as a key.*/
 
 function hasValue(obj, arg) {
-    //it gets the object's values.
+    //gets the object's values.
     let objValues = Object.values(obj)
-    // check if the arg is within the values.
+    //checks if the arg is within the values.
     let argIsInclude = objValues.includes(arg)
     return console.log(argIsInclude)
 }

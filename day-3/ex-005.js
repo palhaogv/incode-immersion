@@ -11,7 +11,10 @@ function groupFamilies(arr) {
 
     //passing through all the objects in the arr, the looping above it's going to push to listOfSurnames the surnames without repeating them,
     // and also adding which surname as a Key in objSurname
-    for (i = 0; i < arr.length; i++) output = listOfSurnames.includes(arr[i].surname) ?  0 : listOfSurnames.push(arr[i].surname) && (objSurname[arr[i].surname] = [])
+    for (i = 0; i < arr.length; i++) {
+        let surnameToCheck = arr[i].surname
+        listOfSurnames.includes(surnameToCheck) ?  0 : listOfSurnames.push(surnameToCheck) && (objSurname[surnameToCheck] = [])
+    }
 
     //creating a double loop. The first one to get inside which of the arr's groups. And the other one to get inside of which group.
     //The first loop  
