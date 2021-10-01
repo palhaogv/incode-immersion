@@ -16,25 +16,42 @@ window.onload = function () {
     var black = document.getElementById('black')
     var square = document.getElementById('square')
 
-    blue.onmouseover = function () {
-        square.style.background='blue';
-    };
+    //SOLUTION 1.
+    function changeTheColor(arg) {
+        //arg is and object (e.g. arg blue is <div id="blue">BLUE</div>)
+        //so arg.onmouseover is the function to when the mouse is over the object (e.g. blue)
+        //it's going to do something, in that case: square.style.background=objText
+        //objText is the text inside the object (e.g. is BLUE in <div id="blue">BLUE</div>)
+        var objText = arg.innerText
+        arg.onmouseover = function () {
+            square.style.background = objText;
+        };
+    }
 
-    red.onmouseover = function () {
-        square.style.background='red';
-    };
-
-    yellow.onmouseover = function () {
-        square.style.background='yellow';
-    };
-
-    green.onmouseover = function () {
-        square.style.background='green';
-    };
-
-    black.onmouseover = function () {
-        square.style.background='black';
-    };
-    
-
+    changeTheColor(red)
+    changeTheColor(yellow)
+    changeTheColor(green)
+    changeTheColor(black)
+    changeTheColor(blue)
 }
+
+/* SOLUTION 2.
+blue.onmouseover = function () {
+    square.style.background='blue';
+};
+
+red.onmouseover = function () {
+    square.style.background='red';
+};
+
+yellow.onmouseover = function () {
+    square.style.background='yellow';
+};
+
+green.onmouseover = function () {
+    square.style.background='green';
+};
+
+black.onmouseover = function () {
+    square.style.background='black';
+};*/
