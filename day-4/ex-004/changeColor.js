@@ -9,30 +9,25 @@ color name, the square takes the corresponding color.
 see changeColor.gif*/
 
 window.onload = function () {
-    var blue = document.getElementById('blue')
-    var red = document.getElementById('red')
-    var yellow = document.getElementById('yellow')
-    var green = document.getElementById('green')
-    var black = document.getElementById('black')
-    var square = document.getElementById('square')
+    var square = document.getElementById('square') //square element
 
     //SOLUTION 1.
-    function changeTheColor(arg) {
-        //arg is and object (e.g. arg blue is <div id="blue">BLUE</div>)
-        //so arg.onmouseover is the function to when the mouse is over the object (e.g. blue)
+    function changeTheColor(arg) { //arg is the color string.
+        var color = document.getElementById(arg) //var color gets the desired div (the div is an html object)
+        //(e.g. color blue is <div id="blue">BLUE</div>)
+        
+        //color.onmouseover is the function that when the mouse is over the html object (e.g. BLUE)
         //it's going to do something, in that case: square.style.background=objText
-        //objText is the text inside the object (e.g. is BLUE in <div id="blue">BLUE</div>)
-        var objText = arg.innerText
-        arg.onmouseover = function () {
-            square.style.background = objText;
+        color.onmouseover = function () {
+            square.style.background = arg; 
         };
     }
 
-    changeTheColor(red)
-    changeTheColor(yellow)
-    changeTheColor(green)
-    changeTheColor(black)
-    changeTheColor(blue)
+    changeTheColor('red')
+    changeTheColor('yellow')
+    changeTheColor('green')
+    changeTheColor('black')
+    changeTheColor('blue')
 }
 
 /* SOLUTION 2.
