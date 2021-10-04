@@ -6,8 +6,8 @@ it triggers an alert with the words "You have submitted the form!".
 Again, you must not modify the HTML file, all your code goes in `alertSubmit.js`!*/
 
 window.onload = function () {
-    var test = document.getElementsByTagName('form')[0]
-    test.onclick = function () {
+    var element = document.getElementsByTagName('form')[0]
+    element.onclick = function () {
         alert("You have submitted the form!");
     };
 }

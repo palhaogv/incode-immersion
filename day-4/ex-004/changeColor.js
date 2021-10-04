@@ -30,7 +30,7 @@ window.onload = function () {
     changeTheColor('blue')
 }
 
-/* SOLUTION 2.
+/*SOLUTION 2.
 blue.onmouseover = function () {
     square.style.background='blue';
 };

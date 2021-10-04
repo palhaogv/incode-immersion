@@ -6,11 +6,11 @@ over the square, it will become red.
 
 Again, you must not modify the HTML file.*/
 window.onload = function () {
-    var test = document.getElementById('square')
-    test.onmouseover = function () {
+    var element = document.getElementById('square')
+    element.onmouseover = function () {
         this.style.background='red';
     };
-    test.onmouseout = function () {
+    element.onmouseout = function () {
         this.style.background='blue'
     }
 }
